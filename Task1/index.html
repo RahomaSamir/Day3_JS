@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <style>
+    body {
+      
+      margin: 20px;
+      text-align: center;
+    }
+    .todo-list {
+      list-style: none;
+      padding: 0;
+    }
+    .todo-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f9f9f9;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .todo-item.highlight{
+    background-color: #95cfa3;
+    }
+    .done {
+      text-decoration: line-through;
+      color: green;
+    }
+    button {
+      margin-left: 5px;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 8px;
+    }
+    button:hover{
+        background-color: rgb(41, 203, 101);
+    }
+    button.done-btn {
+      background-color: #28a745;
+      color: white;
+    }
+    button.Delete-btn {
+      background-color: #dc3545;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  
+  <input type="text" id="todo-input" placeholder="Add your task here">
+  <button id="add-btn">Add</button>
+
+  <ul class="todo-list" id="todo-list"></ul>
+
+  <script src="task1.js">
+  
+  </script>
+</body>
+</html>
